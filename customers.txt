@@ -1,0 +1,13 @@
+create table   customers(
+    c_num INT,
+ 		c_name VARCHAR(50),
+  	c_contact VARCHAR(50),
+ 		c_city VARCHAR(50),
+ 		c_birth date
+		ALTER TABLE customers MODIFY c_contact VARCHAR(50) AFTER c_birth,
+		alter table customers modify c_name varchar(70),
+		alter table customers change c_contact c_phone varchar(70),
+		alter table customers add column c_gender char(1) not null comment 'erp账号' after c_name,
+		ALTER TABLE customers RENAME TO customers_info,
+		ALTER TABLE customers_info DROP c_city
+);

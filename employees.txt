@@ -1,0 +1,15 @@
+create table employees(
+    empNum INT PRIMARY KEY AUTO_INCREMENT,
+ 		astName VARCHAR(50),
+  	firstName VARCHAR(50),
+ 		mobile VARCHAR(25),
+ 		code  int,
+		jobTitle varchar(50),
+		birth date,
+		alter table employees change birth birthday date,
+		alter table employees modify code char(1),
+		ALTER TABLE employees DROP jobTitle,
+		ALTER TABLE employees ADD favoriate_activity varchar(100),
+		ALTER TABLE employees RENAME TO  employees_info,
+		
+);
